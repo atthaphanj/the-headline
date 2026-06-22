@@ -1,0 +1,12 @@
+<?php
+/**
+ * คัดลอกไฟล์นี้เป็น config.local.php แล้วใส่ค่าจริง
+ */
+$defaults = require __DIR__ . '/config.php';
+
+return array_merge($defaults, [
+    'onesignal_app_id'  => 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+    'onesignal_api_key' => 'os_v2_app_xxxxxxxxxxxxxxxxxxxxxxxx',
+    'site_url'          => 'https://your-domain.com',
+    'cron_secret'       => 'change-me-to-random-string',
+]);
